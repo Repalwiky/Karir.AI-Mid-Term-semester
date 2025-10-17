@@ -3,7 +3,7 @@ const menuToggle = document.querySelector('.menu-toggle');
 const toggleRiskButton = document.getElementById('toggle-risk');
 const strategyPanel = document.querySelector('.strategy');
 const accordionItems = document.querySelectorAll('.accordion-item');
-const counters = document.querySelectorAll('.stat-card h3, .testimonial-metrics h3');
+const counters = document.querySelectorAll('[data-target]');
 
 // Mobile navigation toggle
 if (menuToggle) {
