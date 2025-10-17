@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Karir.AI – Peta Karier Masa Depan Indonesia</title>
-    <meta name="description" content="Roadmap karier masa depan dengan prediksi skill, CV future-proof, dan AI Interview Coach khusus talenta muda Indonesia.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Roadmap karier masa depan dengan prediksi skill, CV future-proof, dan AI Interview Coach khusus talenta muda Indonesia." />
+    <meta name="theme-color" content="#4A65F6" />
+    <meta name="color-scheme" content="light" />
+    <!-- Social meta -->
+    <meta property="og:title" content="Karir.AI – Peta Karier Masa Depan Indonesia" />
+    <meta property="og:description" content="Roadmap karier masa depan dengan prediksi skill, CV future-proof, dan AI Interview Coach khusus talenta muda Indonesia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Defer JS for better performance -->
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="topbar">
-        <div class="logo">Karir<span>.AI</span></div>
-        <nav class="nav-links">
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+
+    <header class="topbar" role="banner">
+        <a href="#hero" class="logo" aria-label="Karir.AI beranda">Karir<span>.AI</span></a>
+
+        <nav class="nav-links" id="site-nav" aria-label="Navigasi utama">
             <a href="#features">Fitur</a>
             <a href="#future-proof">Future-Proof</a>
             <a href="#pricing">Harga</a>
             <a href="#faq">FAQ</a>
         </nav>
+
         <div class="actions">
-            <button class="btn ghost">Masuk</button>
-            <button class="btn primary">Mulai Roadmap</button>
+            <a class="btn ghost" href="#" aria-label="Masuk ke akun">Masuk</a>
+            <a class="btn primary" href="#cta">Mulai Roadmap</a>
         </div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <button class="menu-toggle" aria-label="Buka menu" aria-controls="site-nav" aria-expanded="false">
+            <span></span><span></span><span></span>
         </button>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero" id="hero">
             <div class="hero-content">
                 <p class="eyebrow">Roadmap Karier Era AI</p>
                 <h1>Khawatir skill-mu digantikan AI? Kami punya roadmap 5 tahun agar kamu tetap relevan.</h1>
                 <p class="subtitle">Platform pertama di Indonesia yang menggabungkan prediksi pekerjaan masa depan, roadmap pembelajaran adaptif, CV future-proof, dan AI Interview Coach dalam satu alur.</p>
                 <div class="cta-group">
-                    <button class="btn primary">Mulai Roadmap Masa Depan-mu</button>
-                    <button class="btn secondary">Lihat Demo 3 Menit</button>
+                    <a class="btn primary" href="#cta">Mulai Roadmap Masa Depan-mu</a>
+                    <a class="btn secondary" href="#features">Lihat Demo 3 Menit</a>
                 </div>
-                <div class="social-proof">
-                    <div class="avatars">
+                <div class="social-proof" aria-label="Bukti sosial">
+                    <div class="avatars" aria-hidden="true">
                         <span class="avatar">R</span>
                         <span class="avatar">F</span>
                         <span class="avatar">S</span>
@@ -51,7 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-card">
+
+            <div class="hero-card" aria-label="Cuplikan masa depan">
                 <div class="hero-card__header">
                     <h2>Future Snapshot</h2>
                     <span class="badge">Realtime</span>
@@ -76,25 +94,25 @@
                         </ul>
                     </div>
                 </div>
-                <button class="btn tertiary">Dapatkan Roadmap Pribadi</button>
+                <a class="btn tertiary" href="#cta">Dapatkan Roadmap Pribadi</a>
             </div>
         </section>
 
         <section class="stats" aria-label="Statistik Penting">
             <article class="stat-card">
-                <h3 data-target="7.28" data-suffix="Juta">0</h3>
+                <h3 data-target="7.28" data-suffix="Juta" data-decimals="2">0</h3>
                 <p>talenta muda Indonesia belum bekerja. Jangan jadi bagian statistik.</p>
             </article>
             <article class="stat-card">
-                <h3 data-target="75" data-suffix="%">0</h3>
+                <h3 data-target="75" data-suffix="%" data-decimals="0">0</h3>
                 <p>CV ditolak ATS sebelum dilihat HR. Optimalkan CV-mu dengan AI kami.</p>
             </article>
             <article class="stat-card">
-                <h3 data-target="37" data-suffix="%">0</h3>
+                <h3 data-target="37" data-suffix="%" data-decimals="0">0</h3>
                 <p>pekerjaan entry-level terancam otomatisasi AI dalam 5 tahun.</p>
             </article>
             <article class="stat-card">
-                <h3 data-target="3" data-suffix="x">0</h3>
+                <h3 data-target="3" data-suffix="x" data-decimals="0">0</h3>
                 <p>lebih siap menghadapi interview setelah latihan dengan AI Interview Coach.</p>
             </article>
         </section>
@@ -176,7 +194,7 @@
             <div class="insight-card">
                 <div class="insight-header">
                     <h2>AI Impact Radar</h2>
-                    <button class="btn pill" id="toggle-risk">Lihat Strategi AI-Proof</button>
+                    <button class="btn pill" id="toggle-risk" type="button">Lihat Strategi AI-Proof</button>
                 </div>
                 <p class="insight-lede">Skill mana yang harus dipertahankan? Mana yang perlu di-upgrade? Radar ini memandu fokus belajarmu.</p>
                 <div class="radar" role="list">
@@ -245,7 +263,7 @@
                         <li>CV Builder dasar</li>
                         <li>Simulasi interview 1x/bulan</li>
                     </ul>
-                    <button class="btn secondary">Mulai Gratis</button>
+                    <a class="btn secondary" href="#cta">Mulai Gratis</a>
                 </article>
                 <article class="price-card price-card--featured">
                     <div class="ribbon">Populer</div>
@@ -258,7 +276,7 @@
                         <li>CV Builder premium &amp; ATS boost</li>
                         <li>AI Interview Coach tanpa batas</li>
                     </ul>
-                    <button class="btn primary">Coba 7 Hari Gratis</button>
+                    <a class="btn primary" href="#cta">Coba 7 Hari Gratis</a>
                 </article>
                 <article class="price-card">
                     <h3>Enterprise</h3>
@@ -270,7 +288,7 @@
                         <li>CV &amp; Interview Coach untuk institusi</li>
                         <li>Dukungan implementasi nasional</li>
                     </ul>
-                    <button class="btn tertiary">Jadwalkan Demo</button>
+                    <a class="btn tertiary" href="#">Jadwalkan Demo</a>
                 </article>
             </div>
         </section>
@@ -279,64 +297,64 @@
             <div class="testimonial-card">
                 <p class="quote">“AI-Proof Score aku naik dari 42% ke 78% dalam 30 hari. Roadmap-nya bikin aku ngerti langkah nyata buat siapin karier masa depan.”</p>
                 <div class="person">
-                    <span class="avatar">R</span>
+                    <span class="avatar" aria-hidden="true">R</span>
                     <div>
                         <strong>Rani, 22 tahun</strong>
                         <small>Lulusan Ilmu Komunikasi – Surabaya</small>
                     </div>
                 </div>
             </div>
-            <div class="testimonial-metrics">
+            <div class="testimonial-metrics" aria-label="Metrik testimoni">
                 <div>
-                    <h3 data-target="85" data-suffix="%">0</h3>
+                    <h3 data-target="85" data-suffix="%" data-decimals="0">0</h3>
                     <p>CV yang dioptimalkan Karir.AI lolos ATS.</p>
                 </div>
                 <div>
-                    <h3 data-target="70" data-suffix="%">0</h3>
+                    <h3 data-target="70" data-suffix="%" data-decimals="0">0</h3>
                     <p>pengguna meningkatkan skor interview &gt;20%.</p>
                 </div>
                 <div>
-                    <h3 data-target="50" data-suffix="K">0</h3>
+                    <h3 data-target="50" data-suffix="K" data-decimals="0">0</h3>
                     <p>future job projects diselesaikan oleh komunitas.</p>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta" id="cta">
             <div class="cta-content">
                 <h2>Siap jadi talenta masa depan Indonesia?</h2>
                 <p>Tinggalkan rasa takut digantikan AI. Mulai bangun karier yang relevan dengan roadmap, CV, dan interview coach yang future-proof.</p>
             </div>
-            <button class="btn primary">Aktifkan Roadmap Masa Depan</button>
+            <a class="btn primary" href="#" data-cta-primary>Aktifkan Roadmap Masa Depan</a>
         </section>
 
-        <section class="faq" id="faq">
+        <section class="faq" id="faq" aria-label="Pertanyaan Populer">
             <div class="section-header">
                 <p class="eyebrow">Pertanyaan Populer</p>
                 <h2>Semua yang perlu kamu tahu sebelum memulai.</h2>
             </div>
             <div class="accordion">
                 <article class="accordion-item">
-                    <button class="accordion-trigger">Seberapa akurat prediksi pekerjaan masa depan Karir.AI?</button>
-                    <div class="accordion-content">
+                    <button class="accordion-trigger" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-panel-1">Seberapa akurat prediksi pekerjaan masa depan Karir.AI?</button>
+                    <div class="accordion-content" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
                         <p>Model kami dilatih dari 50.000+ lowongan lokal &amp; tren global, divalidasi HR Indonesia. Kami tampilkan tingkat kepercayaan agar kamu tahu bagaimana keputusan dibuat.</p>
                     </div>
                 </article>
                 <article class="accordion-item">
-                    <button class="accordion-trigger">Apakah CV saya pasti lolos ATS?</button>
-                    <div class="accordion-content">
+                    <button class="accordion-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2">Apakah CV saya pasti lolos ATS?</button>
+                    <div class="accordion-content" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
                         <p>CV Builder kami diuji pada sistem ATS populer (Jobstreet, Kalibrr) dengan tingkat keberhasilan 90%+. Kami juga memberi tips manual agar kamu makin siap.</p>
                     </div>
                 </article>
                 <article class="accordion-item">
-                    <button class="accordion-trigger">Bagaimana simulasi interview membantu saya?</button>
-                    <div class="accordion-content">
+                    <button class="accordion-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3">Bagaimana simulasi interview membantu saya?</button>
+                    <div class="accordion-content" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
                         <p>AI Interview Coach memberikan pertanyaan relevan konteks Indonesia, analisis empati &amp; problem-solving, serta feedback budaya kerja lokal.</p>
                     </div>
                 </article>
                 <article class="accordion-item">
-                    <button class="accordion-trigger">Apakah ada program untuk kampus &amp; komunitas?</button>
-                    <div class="accordion-content">
+                    <button class="accordion-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4">Apakah ada program untuk kampus &amp; komunitas?</button>
+                    <div class="accordion-content" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
                         <p>Kami menyediakan paket Enterprise untuk universitas, kampus merdeka, dan komunitas dengan dashboard analitik dan sertifikasi future-proof.</p>
                     </div>
                 </article>
@@ -344,9 +362,9 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-brand">
-            <div class="logo">Karir<span>.AI</span></div>
+            <a href="#hero" class="logo" aria-label="Karir.AI beranda">Karir<span>.AI</span></a>
             <p>Karir.AI adalah peta jalan untuk memastikan talenta muda Indonesia tetap relevan di era AI.</p>
         </div>
         <div class="footer-links">
@@ -369,9 +387,7 @@
                 <a href="#">Syarat Penggunaan</a>
             </div>
         </div>
-        <p class="footer-copy">© 2024 Karir.AI. Semua hak dilindungi.</p>
+        <p class="footer-copy">© 2025 Karir.AI. Semua hak dilindungi.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
